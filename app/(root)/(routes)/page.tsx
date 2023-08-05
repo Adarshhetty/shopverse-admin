@@ -1,8 +1,8 @@
 "use client"
 import { useEffect } from "react"
-import { Modal } from "@/components/ui/modal"
+
 import { useStoreModal } from "@/hooks/use-store-modal"
-import { UserButton } from "@clerk/nextjs"
+
 
 
 const SetUpPage=()=> {
@@ -13,15 +13,9 @@ const SetUpPage=()=> {
     if(!isOpen){
       onOpen();
     }
-  
-  
   }, [isOpen,onOpen])
   
-    return (
-      <div className="p-4">
-       Root page
-      </div>
-    )
+    return null
   }
   export default SetUpPage
   
